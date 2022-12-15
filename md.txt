@@ -59,7 +59,8 @@ function leafClear($text,$email){
     $text = str_replace("[-randomstring-]", randString('abcdefghijklmnopqrstuvwxyz0123456789'), $text);
     $text = str_replace("[-randomnumber-]", randString('0123456789'), $text);
     $text = str_replace("[-randommd5-]", md5(randString('abcdefghijklmnopqrstuvwxyz0123456789')), $text);
-    return $text;
+    $text = str_replace("[-horuxuns-]", md5($email), $text);
+return $text;
 }
 function leafTrim($string){
 	$string=urldecode($string);
